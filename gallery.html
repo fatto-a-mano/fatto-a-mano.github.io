@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatto a Mano by Emma</title>
+    <link rel="stylesheet" href="format.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>            
+                    <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="reservation.html">RESERVATION</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>                        
+               </ul>                
+            </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>Product Gallery</h1>       
+    </section>
+ 
+ <!-----Gallery----->
+    <section class="gallery">
+       <h1>Products we offer</h1>
+       <p>Please see the products below</p>
+        
+        <div class="row">
+            <div class="gallery-col">
+                <h3>hats</h3>
+                <p>asdlkajsdakjdl;asjd;lkj;</p>
+            </div>
+            <div class="gallery-col">
+                <h3>wallets</h3>
+                <p>asdlkajsdakjdl;asjd;lkj;</p>
+            </div>
+            <div class="gallery-col">
+                <h3>shoals</h3>
+                <p>asdlkajsdakjdl;asjd;lkj;</p>
+            </div>   
+        </div>
+    </section>
+ 
+ 
+<!-----facilities----->
+<section class="yarns">
+   <h1>Our Yarns</h1>
+   <p>all available yarns</p>
+   
+   <div class="row">
+       <div class="yarn-col">
+        <img src="images/yarns.png">
+        <h3>pinkish</h3>
+        <p>cutesy colors for girly girls</p>
+       </div>
+       
+       <div class="yarn-col">
+        <img src="images/yarn2.png">
+        <h3>bluish yarns</h3>
+        <p>boyband boy</p>
+       </div>
+       
+       <div class="yarn-col">
+        <img src="images/yarn3.png">
+        <h3>rainbow</h3>
+        <p>JR rainbow buging ging</p>
+       </div>       
+   </div>    
+</section>
+                       
+             
+                      
+                            
+                    
+<!----- footer ----->                                             
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are Venom 2022</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+       <i class="fab fa-twitter"></i>
+       <i class="fab fa-instagram"></i>
+       <i class="fab fa-linkedin"></i>       
+    </div>
+    <p>Made with <i class="far fa-heart"></i> by Johan</p>
+</section>                                               
+                                                    
+                                                        
+                                                            
+                                                                
+                                                                    
+                                                                        
+                                                                                
+<!--------Javascript for Toggle Menu------->
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks")
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+    
+    
+    
+    
+    
+</body>
+</html>
