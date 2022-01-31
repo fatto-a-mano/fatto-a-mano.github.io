@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(172, 227, 198, 0.7),rgba(172, 227, 198, 0.7)),url(images/banner1.png); /*1st color is top 2nd color bottom*/
+    background-image: linear-gradient(rgba(77, 78, 126, 0.7),rgba(172, 227, 198, 0.7)),url(images/banner1.png); /*1st color is top 2nd color bottom*/
     background-position: center;
     background-size: auto;
     position: relative;
@@ -16,6 +16,11 @@
 .text-box h1{
     font-family: 'Finger Paint', cursive;
 }
+
+#img-logo{
+    width:100px;
+}
+
 
 nav{
     display: flex;
@@ -37,7 +42,7 @@ nav-links{
     position: relative;
 }
 .nav-links ul li a{ /*anchor tags*/
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
@@ -66,7 +71,9 @@ nav-links{
     font-size: 62px;
 }
 .text-box p{
-    margin: 10px 0 20px;
+    color: #fff;
+    margin: 0 0 20px;
+    padding: 0 0 0 0;
     font-size: 15px;
 }
 .button{
@@ -117,8 +124,26 @@ nav .fa{
         
 }
 
+.custom-shape-divider-bottom-1643618121 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1643618121 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 160px;
+}
 
+.custom-shape-divider-bottom-1643618121 .shape-fill {
+    fill: #FFFFFF;
+}
 
 /*-----gallery-----*/
 
@@ -126,7 +151,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 h1{
     font-size: 36px;
