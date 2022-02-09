@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(77, 78, 126, 0.7),rgba(172, 227, 198, 0.7)),url(images/banner1.png); /*1st color is top 2nd color bottom*/
+    background-image: linear-gradient(rgba(64,64,92, 0.7),rgba(64,64,92, 0.7)),url(images/banner1.png); /*1st color is top 2nd color bottom*/
     background-position: center;
     background-size: auto;
     position: relative;
@@ -60,7 +60,7 @@ nav-links{
 }
 .text-box{
     width: 90%;
-    color: #000000;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -104,45 +104,27 @@ nav .fa{
         display:block;
     }
     .nav-links{
-        position: fixed;
+        position: absolute;
         background:#4e7136;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
  }
     nav .fa{
         display: block;
-        color: #000000;
+        color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
+    
+
+    
         
-}
-
-.custom-shape-divider-bottom-1643618121 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1643618121 svg {
-    position: relative;
-    display: block;
-    width: calc(130% + 1.3px);
-    height: 160px;
-}
-
-.custom-shape-divider-bottom-1643618121 .shape-fill {
-    fill: #FFFFFF;
 }
 
 /*-----gallery-----*/
