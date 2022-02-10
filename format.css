@@ -29,7 +29,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 150px;
+    width: 70px;
 }
 nav-links{
     flex: 1;
@@ -360,37 +360,45 @@ h3{
 /*---- about us page ----*/
 
 .sub-header{
-    height: 50vh;
+    height: 30vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/b2.png);
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;    
 }
+.sub-header ul li{
+    margin-top: -0px;
+}
+
+.sub-header h1{
+    margin-top: -30px;
+}
 
 .about-us{
     width: 80%;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 0px; /* spacing of handmade to top*/
+    padding-bottom: 10px;
 }
 
 .about-col{
     flex-basis: 48%;
-    padding: 30px 2px;
+    padding: 0px 2px; /*-spacing of image-*/
 }
 
 .about-col img{
     width: 100%;
 }
 
-.about-col h1{
-    padding: 0;
+.about-us h1{
+    padding: 0px;
+    text-align: center;
 }
-.about-col p{
-    padding: 15px 0 25px;
-}
+.about-us p{
+    padding: 0px 0px -100px 0px;
+  }
 
 .red-btn{
     border: 1px solid #f44336;
