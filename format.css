@@ -262,6 +262,14 @@ h3{
     
 }
 
+@media(max-width:700px){
+    .ordr-row{
+        display: block;
+    }
+}
+    
+
+
 /*---- testimonials ----*/
 
 .testimonials{
