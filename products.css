@@ -114,6 +114,10 @@ nav .fa{
     }
 }
 
+
+
+
+
 .sub-header{
     height: 30vh;
     width: 100%;
@@ -132,7 +136,7 @@ nav .fa{
 }
 
 
-/*-----gallery-----*/
+/*-----galgallery-collery-----*/
 
 h1{
     font-size: 36px;
@@ -146,6 +150,7 @@ p{
     padding: 10px;
     
 }
+
 
 /*selector*/
 select{
