@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatto a Mano by Emma</title>
+    <title>Place your order | Fatto a Mano by Emma</title>
     <link rel="stylesheet" href="format.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-
+</head>
 <body>
     <section class="sub-header">
         <nav>
@@ -23,67 +23,69 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i> 
                 <ul>            
-                   <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                    <li><a href="about.html">ABOUT</a></li>
-                   <li><a href="gallery.html">GALLERY</a></li>
-                   <li><a href="reservation.html">RESERVATION</a></li>
-                   <li><a href="contact.html">CONTACT</a></li>                         
-               </ul>                
+                   <li><a href="gallery.html">PRODUCTS</a></li>
+                   <li><a href="reservation.html">ORDER</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>                        
+               </ul>                 
             </div>
            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-       <h1>Make Your Reservations!</h1>       
+       <h1>COME AND ORDER</h1>       
     </section>
  
+ <div class="ordr-row">
+      
+    <div class="order-col">
+         <img src="images/order-code.jpg" alt="">     
+   </div>
+        <div class="order-col">
+        <form class="ordr-form" action="https://formspree.io/f/xrgjpnwd" method="post">
+            <input type="text" name="name" placeholder="Enter your full name" required>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <input type="text" name="phone-number" placeholder="Enter contact number" required>
+            <input type="text" name="prod-code" placeholder="Enter product code" required>
+            <input type="text" name="date-pref" placeholder="Enter date completion preferred" required>
+            <textarea rows="8" name="message" placeholder="Enter other information to customize like: colors and other add-ons." required></textarea>
+            <button type="submit" class="button red-btn">Send Message</button>
+        </form>
+        </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 <!---reservation-->
-
-<section class='reservation'>
-    <h1>RESERVATIONS</h1>
-    <p>A Memory in Every Single Piece</p>
-    
-    <div class="row">
-        <div class="res-col">
-            <img src="images/bags.png">
-            <div class="layer">
-                <h3>BAGS</h3>                
-            </div>
-        </div>
-        <div class="res-col">
-            <img src="images/hats.png">
-            <div class="layer">
-                <h3>HATS</h3>                
-            </div>
-        </div>
-        <div class="res-col">
-            <img src="images/wallets.png">
-            <div class="layer">
-                <h3>WALLETS</h3>                
-            </div>
-        </div>
-        
-    </div>
-</section>            
-                            
-                    
+                 
 <!----- footer ----->                                             
 <section class="footer">
     <h4>About Us</h4>
-    <p>We are Venom 2022</p>
+    <p>Connect with us on our other social platforms</p>
     <div class="icons">
-        <i class="fab fa-facebook"></i>
-       <i class="fab fa-twitter"></i>
-       <i class="fab fa-instagram"></i>
-       <i class="fab fa-linkedin"></i>       
+        <a href="https://www.facebook.com/FattoAManobyEmma"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/fatto_a_mano_by_emma/"><i class="fab fa-instagram"></i></a>
+            
     </div>
-    <p>Made with <i class="far fa-heart"></i> by Johan</p>
+    <p>Made with <i class="far fa-heart"></i> by jjiwd</p>
 </section>                                               
-                                                    
-                                                        
-                                                            
-                                                                
-                                                                    
-                                                                        
-                                                                                
+  
 <!--------Javascript for Toggle Menu------->
 
 <script>

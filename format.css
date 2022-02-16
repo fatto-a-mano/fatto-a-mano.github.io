@@ -127,6 +127,36 @@ nav .fa{
         
 }
 
+/* FAQS */
+
+.faqs {
+    margin: 100px;
+   }
+.faqs h1, p{
+    text-align: center;
+}
+.faqs h3{
+    margin: 20px; 
+    text-decoration: underline;
+}
+
+.faqs ul li,p{
+    text-align: center;
+    color: black;
+    list-style-position: inside;
+
+}
+.faq-list{
+    cursor: pointer;
+   
+}
+.faqs-ch {
+    text-decoration: none;
+    color: inherit;
+   /* border: 1px solid #4e7136;
+    padding: 1px; */
+}
+
 /*-----gallery-----*/
 
 .gallery{
@@ -176,97 +206,70 @@ h3{
 }
 
 
-/* reservation */
+/* products*/
 
-.reservation{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
 }
 
-.res-col{
-    flex-basis: 32%;
-    border-radius: 10px;
+.col-4 img{
+    width: 100%;
+    
+}
+
+/*--- ORDER---*/
+
+.order-col img{
+    width: 100%;
+}
+
+.order-col{
+    flex-basis: 48%;
     margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+}
+.order-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.res-col img{
-    width: 100%;
-    display: block;
-}
-
-.layer{
-    background: trasparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-.layer:hover{
-    background: rgba(226,0,0,0.7);
-}
-
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-  }
-
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
-}
-
-/*--- facilities---*/
-
-.yarns{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.yarn-col {
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.yarn-col img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.yarn-col p{
+.order-col div p{
     padding: 0;
 }
-.yarn-col h3{
-    margin-top: 16px;
-    margin-bottom:15px;
-    text-align: left;
+.order-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
 }
+.order-col input, .order-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 
+}
+.ordr-row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+    margin: 5% 5%;
+    
+}
 
 /*---- testimonials ----*/
 
 .testimonials{
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 30px;
     text-align: center;
+
 }
 
 .testi-col{
@@ -310,7 +313,7 @@ h3{
 /* cta */
 
 .cta{
-    margin: 100px auto;
+    margin: 10px auto;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.png);
     background-position: center;

@@ -15,6 +15,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    
+    
+<!--JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+    
+<script>
+    $(document).ready(function(){
+        
+        $('#hideshow').click(function(){
+            
+            $("#hideshow1").show();
+            $(this).hide();
+            
+    
+        });
+        
+        $('#hideshow1').click(function(){
+            
+            $("#hideshow").show();
+            $(this).hide();
+            
+            
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        
+        $('#faqq2a').click(function(){
+            
+            $("#faqq2b").show();
+            $(this).hide();
+            
+    });
+        
+        $('#faqq2b').click(function(){
+            
+            $("#faqq2a").show();
+            $(this).hide();
+            
+    });
+        
+        });
+        
+</script>   
+<script>
+    $(document).ready(function(){
+        
+        $('#faqq3a').click(function(){
+            
+            $("#faqq3b").show();
+            $(this).hide();
+            
+    });
+        
+        $('#faqq3b').click(function(){
+            
+            $("#faqq3a").show();
+            $(this).hide();
+            
+    });
+        
+        });
+        
+</script> 
+
+</head>
+
+
+
 
 <body>
     <section class="header">
@@ -25,8 +98,8 @@
                 <ul>            
                     <li><a href="index.html">HOME</a></li>
                    <li><a href="about.html">ABOUT</a></li>
-                   <li><a href="gallery.html">GALLERY</a></li>
-                   <li><a href="reservation.html">RESERVATION</a></li>
+                   <li><a href="gallery.html">PRODUCTS</a></li>
+                   <li><a href="reservation.html">ORDER</a></li>
                    <li><a href="contact.html">CONTACT</a></li>                        
                </ul>                
             </div>
@@ -46,82 +119,98 @@
 <!-----Gallery----->
     <section class="gallery">
        <h1>Products we offer</h1>
-       <p>Please see the products below</p>
-        
+              
+              
         <div class="row">
             <div class="gallery-col">
-                <h3>Wearables & Accessories</h3>
-                <p>Hats, Wallets, Shawls, Beanies<br>Clothing, and More!</p>
+                <h3>Wearables</h3>
+                <p>Swimwear, Skirts, Shorts, Cardigans, Tops and more!</p>
             </div>
             
             <div class="gallery-col">
-                <h3>Amigurumis & Toys</h3>
-                <p>Cute litte toys loved by everyone</p>
+                <h3>Accessories</h3>
+                <p>Hats, Shawls, Bags, Scarves, Earrings, Wallets and more!</p>
             </div>
             <div class="gallery-col">
                 <h3>Home & Living</h3>
-                <p>Decorations and Ornatments<br>for the holidays</p>
+                <p>Placemats, Coasters, Flowers, Gadget Covers, etc.</p>
             </div>   
         </div>
     </section>
-    
+
+
+
+
+
+
 <!---reservation-->
 
-<section class='reservation'>
-    <h1>RESERVATIONS</h1>
-    <p>A Memory in Every Single Piece</p>
+
+    <!------CTA------>
+<section class="cta">
+      <h1>Make An Order Now</h1>
+      <a href="" class="button">Click Here</a>
+</section>   
     
-    <div class="row">
-        <div class="res-col">
-            <img src="images/bags.png">
-            <div class="layer">
-                <h3>BAGS</h3>                
-            </div>
+     
+    
+    
+    
+<section class="faqs">
+    <h1>Frequently Asked Questions</h1>
+    <p>(Click on question to view answer)</p>
+<div class="faq-list">
+    <div>
+        <div id="hideshow">
+        <h3>How to order?</h3>
         </div>
-        <div class="res-col">
-            <img src="images/hats.png">
-            <div class="layer">
-                <h3>HATS</h3>                
-            </div>
+        <div id="hideshow1" style="display:none;">
+          <h3>How to order?</h3>
+           <ul>
+               <li>Fill out reservation form. <button><a class="faqs-ch" href="reservation.html">Click Me!</a></button></li>
+            <li>Wait for your order to be confirmed.</li>
+            <li>Payments and shipping details will be provided upon order confirmation</li>
+            <li> Settle at least 50% of the total price through your preferred payment option to reserve your slot.</li>
+            <li>Send proof of payment to isidtoemma@gmail.com</li>   
+            </ul>
+       </div>
+       </div>
+       
+       <div>
+        <div id="faqq2a">
+        <h3>What is the mode of payment?</h3>
         </div>
-        <div class="res-col">
-            <img src="images/wallets.png">
-            <div class="layer">
-                <h3>WALLETS</h3>                
-            </div>
+        <div id="faqq2b" style="display:none">
+          <h3>What is the mode of payment?</h3>
+           <ul>
+            <li>Metrobank</li>
+            <li>Gcash </li>
+            <p>(Specific details will be provided upon order confirmation)</p> 
+            </ul>
+       </div>
+       </div>
+       
+       <div>
+        <div id="faqq3a">
+        <h3>How long does it take to finish my order?</h3>
         </div>
+        <div id="faqq3b" style="display:none">
+          <h3>How long does it take to finish my order?</h3>
+           <ul>
+            <li>It depends on the design and availability of the materials that will be used. <br>Estimated working days is 4-7 days. Rush orders are accepted with an additional fee.</li>
+            </ul>
+       </div>
+       </div>
+       
+       
+</div>
+</section>     
+    
         
-    </div>
-</section>        
-                
-<!-----facilities----->
-<section class="yarns">
-   <h1>Our Yarn</h1>
-   <p></p>
-   
-   <div class="row">
-       <div class="yarn-col">
-        <img src="images/yarns.png">
-        <h3>pinkish</h3>
-        <p>cutesy colors for girly girls</p>
-       </div>
        
-       <div class="yarn-col">
-        <img src="images/yarn2.png">
-        <h3>bluish yarns</h3>
-        <p>boyband boy</p>
-       </div>
-       
-       <div class="yarn-col">
-        <img src="images/yarn3.png">
-        <h3>rainbow</h3>
-        <p>JR rainbow buging ging</p>
-       </div>       
-   </div>    
-</section>
-                       
-                              
-                                     
+
+  
+                                  
 <!----- testimonials ----->      
 
 <section class="testimonials">
@@ -131,8 +220,8 @@
    <div class="row">
        <div class="testi-col">
            <img src="images/user1.png">
-           <div><p>purchase cute hatsasdfasdfasdfasdfas asdfasdfas asdf asdfas</p>  
-           <h3>YASHA 1</h3>
+           <div><p>The hats were wonderful and cute!</p>  
+           <h3>Arielle</h3>
            <i class="fa fa-star"></i>
            <i class="fa fa-star"></i>
            <i class="fa fa-star"></i>
@@ -144,8 +233,8 @@
         <div class="testi-col">
            <img src="images/user2.png">
            <div>
-            <p>purchase cuterrrrrrasdfasdfas fasdf asdfasdfa asd fasdfasdf hats</p> 
-            <h3>YASHA 2</h3>
+            <p>The skirt was comfortable and not stiff.</p> 
+            <h3>Anna</h3>
            <i class="fa fa-star"></i>
            <i class="fa fa-star"></i>
            <i class="fa fa-star"></i>
@@ -158,10 +247,7 @@
                            
 <!----- CTA ------>   
  
-<section class="cta">
-    <h1>Make a reservation now!</h1>
-    <a href="" class="button">CONTACT US</a>
-</section>     
+  
                                         
 <!----- footer ----->                                             
 <section class="footer">
